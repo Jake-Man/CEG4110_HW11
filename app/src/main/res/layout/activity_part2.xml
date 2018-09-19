@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0ec84"
+    tools:context=".ActivityPart2">
+
+    **/
+
+    <LinearLayout
+
+        android:id="@+id/bottomLinearLayout"
+        android:layout_width="381dp"
+        android:layout_height="84dp"
+
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_dark"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawingBoard"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/part1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginBottom="124dp"
+            android:layout_marginStart="8dp"
+            android:onClick="goToPart1"
+            android:text="Return to \n Part 1"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_marginStart="4dp"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+    </LinearLayout>
+
+    <com.example.jacob.ceg4110_hw11.DrawingBoard
+        android:id="@+id/drawingBoard"
+        android:layout_width="373dp"
+        android:layout_height="340dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#e0ec84"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+
+        android:id="@+id/topLinearLayout"
+        android:layout_width="380dp"
+        android:layout_height="77dp"
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/paint_colors"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FF000000"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF000000" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FF990099"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF990099" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FFFF6600"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FFFF6600" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FFFFCC00"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FFFFCC00" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FF009900"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF009900" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FFFF0000"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF009999" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FF0000FF"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF0000FF" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FF009999"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF009999" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FFFF6666"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FFFF6666" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FFFFFFFF"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FFFFFFFF" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FF787878"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF787878" />
+
+            <ImageButton
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_margin="10dp"
+                android:background="#FF660000"
+                android:contentDescription="@string/paint"
+                android:onClick="paintClicked"
+                android:src="@drawable/paint"
+                android:tag="#FF660000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

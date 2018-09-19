@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CEG4110_HW1</string>
+    <string name="abc">Name</string>
+    <string name="draw">Draw</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+</resources>
