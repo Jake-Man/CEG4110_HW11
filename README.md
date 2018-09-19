@@ -1,4 +1,4 @@
-# Canvas-Painter-and-Random-TextColor-Generator
+# CEG4110_HW11 Canvas-Painter-and-Random-TextColor-Generator
 Introduction
 -------------
 This app involves primarily with generating random colors for text and canvas painting utilizing color palletes, a delete button, and a 
